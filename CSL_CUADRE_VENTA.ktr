@@ -1187,11 +1187,11 @@
       <drawshadow>Y</drawshadow>
     </notepad>
     <notepad>
-      <note>CUADRE&#xd;&#xa;ADMIN&#xd;&#xa;POPULAR</note>
-      <xloc>6230</xloc>
-      <yloc>1640</yloc>
+      <note>CUADRE&#xd;&#xa;ADMIN&#xd;&#xa;POPULAR&#xd;&#xa;BR</note>
+      <xloc>6210</xloc>
+      <yloc>1630</yloc>
       <width>73</width>
-      <heigth>55</heigth>
+      <heigth>70</heigth>
       <fontname>Arial</fontname>
       <fontsize>10</fontsize>
       <fontbold>N</fontbold>
@@ -1551,7 +1551,6 @@
   <hop> <from>SL 8</from><to>AZUL 6</to><enabled>Y</enabled> </hop>
   <hop> <from>SL 9</from><to>BAN_RESERVAS 5</to><enabled>Y</enabled> </hop>
   <hop> <from>fr 6</from><to>FR 8</to><enabled>Y</enabled> </hop>
-  <hop> <from>FR 8</from><to>p 4</to><enabled>Y</enabled> </hop>
   <hop> <from>FR 8</from><to>SL 9</to><enabled>Y</enabled> </hop>
   <hop> <from>Merge Join 2</from><to>SL 10</to><enabled>Y</enabled> </hop>
   <hop> <from>Switch &#x2f; Case</from><to>default</to><enabled>Y</enabled> </hop>
@@ -1583,14 +1582,12 @@
   <hop> <from>FR 12</from><to>CC 4</to><enabled>Y</enabled> </hop>
   <hop> <from>FR 12</from><to>FR 13</to><enabled>Y</enabled> </hop>
   <hop> <from>FR 13</from><to>SL 12</to><enabled>Y</enabled> </hop>
-  <hop> <from>FR 13</from><to>P UNION</to><enabled>Y</enabled> </hop>
   <hop> <from>KEY 9</from><to>P_UNION 2</to><enabled>Y</enabled> </hop>
   <hop> <from>SL 14</from><to>FR 28</to><enabled>Y</enabled> </hop>
   <hop> <from>FR 28</from><to>P 10</to><enabled>Y</enabled> </hop>
   <hop> <from>FR 28</from><to>P 11</to><enabled>Y</enabled> </hop>
   <hop> <from>SANTA_CRUZ 5</from><to>BV 5 2</to><enabled>Y</enabled> </hop>
   <hop> <from>VISANET 4</from><to>BV 5 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>P 10</from><to>P UNION</to><enabled>Y</enabled> </hop>
   <hop> <from>P UNION</from><to>VISANET 5</to><enabled>Y</enabled> </hop>
   <hop> <from>P UNION</from><to>SANTA_CRUZ 6</to><enabled>Y</enabled> </hop>
   <hop> <from>VISANET 5</from><to>FR 17</to><enabled>Y</enabled> </hop>
@@ -1602,10 +1599,7 @@
   <hop> <from>fr 16</from><to>p 9</to><enabled>Y</enabled> </hop>
   <hop> <from>p 9</from><to>RS</to><enabled>Y</enabled> </hop>
   <hop> <from>P 11</from><to>sv</to><enabled>Y</enabled> </hop>
-  <hop> <from>sv</from><to>P_UNION_FULL</to><enabled>Y</enabled> </hop>
-  <hop> <from>p 7</from><to>sv</to><enabled>Y</enabled> </hop>
   <hop> <from>RS</from><to>sv</to><enabled>Y</enabled> </hop>
-  <hop> <from>LOG</from><to>P_UNION_FULL</to><enabled>Y</enabled> </hop>
   <hop> <from>P_UNION_FULL</from><to>RESULTADO_FINAL 2</to><enabled>Y</enabled> </hop>
   <hop> <from>BV 4 2</from><to>md 12</to><enabled>Y</enabled> </hop>
   <hop> <from>DETALLE PARA TABLA 2</from><to>DIARIO 3</to><enabled>Y</enabled> </hop>
@@ -1620,7 +1614,6 @@
   <hop> <from>md 12</from><to>p 12</to><enabled>Y</enabled> </hop>
   <hop> <from>Switch &#x2f; Case</from><to>VISANET</to><enabled>Y</enabled> </hop>
   <hop> <from>AZUL</from><to>KEY 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>KEY 4</from><to>P 5</to><enabled>Y</enabled> </hop>
   <hop> <from>SL 10</from><to>fr</to><enabled>Y</enabled> </hop>
   <hop> <from>fr</from><to>p</to><enabled>Y</enabled> </hop>
   <hop> <from>fr</from><to>p 3</to><enabled>Y</enabled> </hop>
@@ -1658,7 +1651,6 @@
   <hop> <from>p 6</from><to>CC</to><enabled>Y</enabled> </hop>
   <hop> <from>FR 4</from><to>p 6 2</to><enabled>Y</enabled> </hop>
   <hop> <from>p 6 2</from><to>fr 6</to><enabled>Y</enabled> </hop>
-  <hop> <from>p</from><to>p 4</to><enabled>Y</enabled> </hop>
   <hop> <from>Calculator 2</from><to>FR 4</to><enabled>Y</enabled> </hop>
   <hop> <from>MJ</from><to>MD 13</to><enabled>Y</enabled> </hop>
   <hop> <from>MD 13</from><to>FR 5</to><enabled>Y</enabled> </hop>
@@ -1691,7 +1683,6 @@
   <hop> <from>MD 9</from><to>end 4</to><enabled>Y</enabled> </hop>
   <hop> <from>end 4</from><to>BANRESERVAS_vs_AZUL_mensual 2</to><enabled>Y</enabled> </hop>
   <hop> <from>BANRESERVAS_vs_AZUL_mensual 2</from><to>ORDER</to><enabled>Y</enabled> </hop>
-  <hop> <from>ORDER</from><to>REPORTE_CUADRE_DE_CAJA</to><enabled>Y</enabled> </hop>
   <hop> <from>FR 20</from><to>REPORTE_CUADRE_DE_CAJA_H1</to><enabled>Y</enabled> </hop>
   <hop> <from>H2</from><to>REPORTE_CUADRE_DE_CAJA_H2</to><enabled>Y</enabled> </hop>
   <hop> <from>FR 20</from><to>FR 21</to><enabled>Y</enabled> </hop>
@@ -1736,7 +1727,6 @@
   <hop> <from>SV 3</from><to>p_full</to><enabled>Y</enabled> </hop>
   <hop> <from>EFECTIVO 3</from><to>P 13</to><enabled>Y</enabled> </hop>
   <hop> <from>EFECTIVO 3</from><to>TRANSFERENCIA</to><enabled>Y</enabled> </hop>
-  <hop> <from>REPORTE_CUADRE_DE_CAJA</from><to>MD 7</to><enabled>Y</enabled> </hop>
   <hop> <from>MD 7</from><to>FR 20</to><enabled>Y</enabled> </hop>
   <hop> <from>ORDER</from><to>MD 7</to><enabled>Y</enabled> </hop>
   <hop> <from>H3</from><to>SL 23</to><enabled>Y</enabled> </hop>
@@ -1745,17 +1735,12 @@
   <hop> <from>POPULAR 3</from><to>BV 2</to><enabled>Y</enabled> </hop>
   <hop> <from>CORRECTO 2</from><to>RESULTADO_FINAL 3 2</to><enabled>Y</enabled> </hop>
   <hop> <from>DETALLE PARA TABLA 3 2</from><to>DIARIO 4</to><enabled>Y</enabled> </hop>
-  <hop> <from>DIARIO 4</from><to>BV 4</to><enabled>Y</enabled> </hop>
   <hop> <from>DIF</from><to>MENSUAL 4</to><enabled>Y</enabled> </hop>
   <hop> <from>NULL 4</from><to>MGB 5</to><enabled>Y</enabled> </hop>
-  <hop> <from>MENSUAL 4</from><to>BV 4</to><enabled>Y</enabled> </hop>
   <hop> <from>MGB 5</from><to>DIF</to><enabled>Y</enabled> </hop>
   <hop> <from>RESULTADO_FINAL 3 2</from><to>NULL 4</to><enabled>Y</enabled> </hop>
   <hop> <from>RESULTADO_FINAL 3 2</from><to>DETALLE PARA TABLA 3 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>MD 16</from><to>1F 3</to><enabled>Y</enabled> </hop>
   <hop> <from>MD 16</from><to>P 15</to><enabled>Y</enabled> </hop>
-  <hop> <from>BV 4</from><to>MD 16</to><enabled>Y</enabled> </hop>
-  <hop> <from>1F 3</from><to>SL 24</to><enabled>Y</enabled> </hop>
   <hop> <from>P 15</from><to>SL 27</to><enabled>Y</enabled> </hop>
   <hop> <from>SL 24</from><to>p_full</to><enabled>Y</enabled> </hop>
   <hop> <from>SL 27</from><to>rs 3</to><enabled>Y</enabled> </hop>
@@ -1793,28 +1778,24 @@
   <hop> <from>FR 9</from><to>P_UNION_ALL</to><enabled>Y</enabled> </hop>
   <hop> <from>SL 6</from><to>P_UNION_ALL</to><enabled>Y</enabled> </hop>
   <hop> <from>SL 7</from><to>P_UNION_ALL</to><enabled>Y</enabled> </hop>
+  <hop> <from>KEY 4</from><to>P 5</to><enabled>Y</enabled> </hop>
+  <hop> <from>FR 8</from><to>SV 11</to><enabled>Y</enabled> </hop>
+  <hop> <from>SV 11</from><to>p 4</to><enabled>Y</enabled> </hop>
+  <hop> <from>p</from><to>p 4</to><enabled>Y</enabled> </hop>
+  <hop> <from>FR 13</from><to>SV 12</to><enabled>Y</enabled> </hop>
+  <hop> <from>SV 12</from><to>P UNION</to><enabled>Y</enabled> </hop>
+  <hop> <from>P 10</from><to>P UNION</to><enabled>Y</enabled> </hop>
+  <hop> <from>p 7</from><to>sv</to><enabled>Y</enabled> </hop>
+  <hop> <from>LOG</from><to>SV 13</to><enabled>Y</enabled> </hop>
+  <hop> <from>SV 13</from><to>P_UNION_FULL</to><enabled>Y</enabled> </hop>
+  <hop> <from>sv</from><to>P_UNION_FULL</to><enabled>Y</enabled> </hop>
+  <hop> <from>MENSUAL 4</from><to>BV 10</to><enabled>Y</enabled> </hop>
+  <hop> <from>DIARIO 4</from><to>BV 10</to><enabled>Y</enabled> </hop>
+  <hop> <from>BV 10</from><to>MD 16</to><enabled>Y</enabled> </hop>
+  <hop> <from>MD 16</from><to>DP</to><enabled>Y</enabled> </hop>
+  <hop> <from>DP</from><to>SL 24</to><enabled>Y</enabled> </hop>
+  <hop> <from>BV 2</from><to>Filter rows</to><enabled>Y</enabled> </hop>
   </order>
-  <step>
-    <name>1F 3</name>
-    <type>SampleRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <linesrange>1</linesrange>
-    <linenumfield/>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>6288</xloc>
-      <yloc>2261</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
   <step>
     <name>1F 4</name>
     <type>SampleRows</type>
@@ -3196,6 +3177,63 @@
     </step>
 
   <step>
+    <name>BANCO 5</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>BANCO</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>ADMINISTRACION</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>MEDIO_DE_PAGO</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>N&#x2f;A</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>MONTO</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1150</xloc>
+      <yloc>1070</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>BANCO 6</name>
     <type>Constant</type>
     <description/>
@@ -3709,6 +3747,25 @@
     </step>
 
   <step>
+    <name>BR_TRANSF</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>6660</xloc>
+      <yloc>890</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>BV 2</name>
     <type>MergeJoin</type>
     <description/>
@@ -3794,72 +3851,6 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>3380</xloc>
       <yloc>2960</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>BV 4</name>
-    <type>StreamLookup</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <from>MENSUAL 4</from>
-    <input_sorted>N</input_sorted>
-    <preserve_memory>Y</preserve_memory>
-    <sorted_list>N</sorted_list>
-    <integer_pair>N</integer_pair>
-    <lookup>
-      <key>
-        <name>K</name>
-        <field>K</field>
-      </key>
-      <value>
-        <name>MONTO</name>
-        <rename>MONTO_MENSUAL</rename>
-        <default/>
-        <type>Number</type>
-      </value>
-      <value>
-        <name>MONTO_1</name>
-        <rename>MONTO_MENSUAL_1</rename>
-        <default/>
-        <type>Number</type>
-      </value>
-      <value>
-        <name>CUADRE</name>
-        <rename>CUADRE</rename>
-        <default/>
-        <type>String</type>
-      </value>
-      <value>
-        <name>PERIODO</name>
-        <rename>PERIODO</rename>
-        <default/>
-        <type>String</type>
-      </value>
-      <value>
-        <name>DIF_MENSUAL</name>
-        <rename>DIF_MENSUAL</rename>
-        <default/>
-        <type>Number</type>
-      </value>
-      <value>
-        <name>KEY</name>
-        <rename>KEY</rename>
-        <default/>
-        <type>String</type>
-      </value>
-    </lookup>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>6290</xloc>
-      <yloc>2000</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -4070,6 +4061,180 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>5850</xloc>
       <yloc>2160</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>C</name>
+    <type>ConcatFields</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name/>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>Local</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>MEDIO_DE_PAGO</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <ConcatFields>
+<targetFieldName>TIPO_MOVIMIENTO</targetFieldName>
+<targetFieldLength>0</targetFieldLength>
+<removeSelectedFields>N</removeSelectedFields>
+    </ConcatFields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1340</xloc>
+      <yloc>1070</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>C 2</name>
+    <type>ConcatFields</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name/>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>DESCRIPCION</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>DESCRIPCION_2</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>DESCRIPCION_3</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <ConcatFields>
+<targetFieldName>TIPO_MOVIMIENTO</targetFieldName>
+<targetFieldLength>0</targetFieldLength>
+<removeSelectedFields>N</removeSelectedFields>
+    </ConcatFields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1070</xloc>
+      <yloc>840</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -4334,99 +4499,6 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>3830</xloc>
       <yloc>1560</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>C 2</name>
-    <type>ConcatFields</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <separator>&#x3b;</separator>
-    <enclosure>&#x22;</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>N</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding/>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name/>
-      <is_command>N</is_command>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
-      <extention>txt</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery>0</splitevery>
-    </file>
-    <fields>
-      <field>
-        <name>DESCRIPCION</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>DESCRIPCION_2</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>DESCRIPCION_3</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-    </fields>
-    <ConcatFields>
-<targetFieldName>TIPO_MOVIMIENTO</targetFieldName>
-<targetFieldLength>0</targetFieldLength>
-<removeSelectedFields>N</removeSelectedFields>
-    </ConcatFields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1070</xloc>
-      <yloc>840</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -5181,6 +5253,35 @@
     </step>
 
   <step>
+    <name>FR 11</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to/>
+<send_false_to/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>MONTO</leftvalue>
+ <function>IS NOT NULL</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1410</xloc>
+      <yloc>1070</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>FR 12</name>
     <type>FilterRows</type>
     <description/>
@@ -5221,7 +5322,7 @@
            <schema_name/>
            </partitioning>
 <send_true_to>SL 12</send_true_to>
-<send_false_to>P UNION</send_false_to>
+<send_false_to>SV 12</send_false_to>
     <compare>
 <condition>
  <negated>N</negated>
@@ -5832,7 +5933,7 @@
            <schema_name/>
            </partitioning>
 <send_true_to>SL 9</send_true_to>
-<send_false_to>p 4</send_false_to>
+<send_false_to>SV 11</send_false_to>
     <compare>
 <condition>
  <negated>N</negated>
@@ -7334,6 +7435,61 @@
     </step>
 
   <step>
+    <name>MD 18</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>Fecha de Pago</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TIPO_MOVIMIENTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>MONTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>BANCO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NUM_TRANSACCION</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>Fecha de Pago</name>
+        <rename>F_TRANSFERENCIA</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy&#x2f;MM&#x2f;dd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1780</xloc>
+      <yloc>1070</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>MD 19</name>
     <type>SelectValues</type>
     <description/>
@@ -7414,6 +7570,41 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>1950</xloc>
       <yloc>1270</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>MD 3 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>F_TRANSFERENCIA</name>
+        <rename>F_TRANSFERENCIA</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy&#x2f;MM&#x2f;dd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1350</xloc>
+      <yloc>840</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -8074,6 +8265,30 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>2460</xloc>
       <yloc>1210</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>MONTO_FIN 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>Y</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;if&#x28;Efectivo.getString&#x28;&#x29;&#x21;&#x3d; null &#x26;&#x26; TRANSFERENCIA_BANCARIA_2.getString&#x28;&#x29;&#x3d;&#x3d; null&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;&#xd;&#xa;	MONTO.setValue&#x28;Efectivo.getNumber&#x28;&#x29;&#x29;&#x3b;&#xd;&#xa;	MEDIO_DE_PAGO.setValue&#x28;&#x22;Efectivo&#x22;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;if&#x28;Efectivo.getString&#x28;&#x29;&#x3d;&#x3d; null &#x26;&#x26; TRANSFERENCIA_BANCARIA_2.getString&#x28;&#x29;&#x21;&#x3d; null&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;&#xd;&#xa;	MONTO.setValue&#x28;TRANSFERENCIA_BANCARIA_2.getString&#x28;&#x29;&#x29;&#x3b;&#xd;&#xa;	MEDIO_DE_PAGO.setValue&#x28;&#x22;Transferencia&#x22;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1250</xloc>
+      <yloc>1070</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -10188,158 +10403,6 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>3370</xloc>
       <yloc>2480</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>REPORTE_CUADRE_DE_CAJA</name>
-    <type>ExcelOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <header>Y</header>
-    <footer>N</footer>
-    <encoding/>
-    <append>N</append>
-    <add_to_result_filenames>Y</add_to_result_filenames>
-    <file>
-      <name>.&#x5c;TOTAL_DATA_CUADRE_DE_CAJA</name>
-      <extention>xls</extention>
-      <do_not_open_newfile_init>N</do_not_open_newfile_init>
-      <create_parent_folder>N</create_parent_folder>
-      <split>N</split>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <sheetname>Sheet1</sheetname>
-      <autosizecolums>Y</autosizecolums>
-      <nullisblank>N</nullisblank>
-      <protect_sheet>N</protect_sheet>
-      <password>Encrypted </password>
-      <splitevery>0</splitevery>
-      <usetempfiles>N</usetempfiles>
-      <tempdirectory/>
-      </file>
-    <template>
-      <enabled>N</enabled>
-      <append>N</append>
-      <filename>template.xls</filename>
-    </template>
-    <fields>
-      <field>
-        <name>BANCO</name>
-        <type>String</type>
-        <format/>
-      </field>
-      <field>
-        <name>MONTO</name>
-        <type>Number</type>
-        <format>0.00</format>
-      </field>
-      <field>
-        <name>F_TRANSFERENCIA</name>
-        <type>String</type>
-        <format/>
-      </field>
-      <field>
-        <name>TIPO_MOVIMIENTO</name>
-        <type>String</type>
-        <format/>
-      </field>
-      <field>
-        <name>DIA_SEMANA</name>
-        <type>String</type>
-        <format/>
-      </field>
-      <field>
-        <name>PERIODO</name>
-        <type>String</type>
-        <format/>
-      </field>
-      <field>
-        <name>MONTO_MENSUAL</name>
-        <type>Number</type>
-        <format>0.00</format>
-      </field>
-      <field>
-        <name>DIF_MENSUAL</name>
-        <type>Number</type>
-        <format>0.00</format>
-      </field>
-      <field>
-        <name>BANCO_1</name>
-        <type>String</type>
-        <format/>
-      </field>
-      <field>
-        <name>MONTO_1</name>
-        <type>Number</type>
-        <format>0.00</format>
-      </field>
-      <field>
-        <name>F_TRANSFERENCIA_1</name>
-        <type>String</type>
-        <format/>
-      </field>
-      <field>
-        <name>TIPO_MOVIMIENTO_1</name>
-        <type>String</type>
-        <format/>
-      </field>
-      <field>
-        <name>DIA_SEMANA_1</name>
-        <type>String</type>
-        <format/>
-      </field>
-      <field>
-        <name>PERIODO_1</name>
-        <type>String</type>
-        <format/>
-      </field>
-      <field>
-        <name>MONTO_MENSUAL_1</name>
-        <type>Number</type>
-        <format>0.00</format>
-      </field>
-      <field>
-        <name>COMMENT</name>
-        <type>String</type>
-        <format/>
-      </field>
-      <field>
-        <name>CUADRE</name>
-        <type>String</type>
-        <format/>
-      </field>
-    </fields>
-    <custom>
-    <header_font_name>arial</header_font_name>
-    <header_font_size>10</header_font_size>
-    <header_font_bold>Y</header_font_bold>
-    <header_font_italic>N</header_font_italic>
-    <header_font_underline>no</header_font_underline>
-    <header_font_orientation>horizontal</header_font_orientation>
-    <header_font_color>black</header_font_color>
-    <header_background_color>none</header_background_color>
-    <header_row_height>255</header_row_height>
-    <header_alignment>left</header_alignment>
-    <header_image/>
-    <row_font_name>arial</row_font_name>
-    <row_font_size>10</row_font_size>
-    <row_font_color>black</row_font_color>
-    <row_background_color>none</row_background_color>
-      </custom>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>4060</xloc>
-      <yloc>4070</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -12773,6 +12836,61 @@
     </step>
 
   <step>
+    <name>SV 10</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>FECHA TRANSACCION</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TIPO_MOVIMIENTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>VALOR</name>
+        <rename>MONTO</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>BANCO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NUMERO REFERENCIA</name>
+        <rename>NUM_TRANSACCION</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>FECHA TRANSACCION</name>
+        <rename>F_TRANSFERENCIA</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyyMMdd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1230</xloc>
+      <yloc>840</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>SV 3</name>
     <type>SelectValues</type>
     <description/>
@@ -13482,7 +13600,7 @@
            </partitioning>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>6280</xloc>
+      <xloc>6230</xloc>
       <yloc>1070</yloc>
       <draw>Y</draw>
       </GUI>
@@ -13501,8 +13619,8 @@
            </partitioning>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>3800</xloc>
-      <yloc>920</yloc>
+      <xloc>3790</xloc>
+      <yloc>940</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -14344,8 +14462,8 @@
            </partitioning>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>4810</xloc>
-      <yloc>900</yloc>
+      <xloc>4780</xloc>
+      <yloc>980</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -15230,198 +15348,7 @@
     </step>
 
   <step>
-    <name>BANCO 5</name>
-    <type>Constant</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <fields>
-      <field>
-        <name>BANCO</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif>ADMINISTRACION</nullif>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-      </field>
-      <field>
-        <name>MEDIO_DE_PAGO</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif>N&#x2f;A</nullif>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-      </field>
-      <field>
-        <name>MONTO</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-      </field>
-    </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1150</xloc>
-      <yloc>1070</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>MONTO_FIN 2</name>
-    <type>ScriptValueMod</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <compatible>Y</compatible>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
-        <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;if&#x28;Efectivo.getString&#x28;&#x29;&#x21;&#x3d; null &#x26;&#x26; TRANSFERENCIA_BANCARIA_2.getString&#x28;&#x29;&#x3d;&#x3d; null&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;&#xd;&#xa;	MONTO.setValue&#x28;Efectivo.getNumber&#x28;&#x29;&#x29;&#x3b;&#xd;&#xa;	MEDIO_DE_PAGO.setValue&#x28;&#x22;Efectivo&#x22;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;if&#x28;Efectivo.getString&#x28;&#x29;&#x3d;&#x3d; null &#x26;&#x26; TRANSFERENCIA_BANCARIA_2.getString&#x28;&#x29;&#x21;&#x3d; null&#x29;&#xd;&#xa;&#x7b;&#xd;&#xa;&#xd;&#xa;	MONTO.setValue&#x28;TRANSFERENCIA_BANCARIA_2.getString&#x28;&#x29;&#x29;&#x3b;&#xd;&#xa;	MEDIO_DE_PAGO.setValue&#x28;&#x22;Transferencia&#x22;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#x7d;&#xd;&#xa;</jsScript_script>
-      </jsScript>    </jsScripts>    <fields>    </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1250</xloc>
-      <yloc>1070</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>C</name>
-    <type>ConcatFields</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <separator>&#x3b;</separator>
-    <enclosure>&#x22;</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>N</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding/>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name/>
-      <is_command>N</is_command>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
-      <extention>txt</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery>0</splitevery>
-    </file>
-    <fields>
-      <field>
-        <name>Local</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>MEDIO_DE_PAGO</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-    </fields>
-    <ConcatFields>
-<targetFieldName>TIPO_MOVIMIENTO</targetFieldName>
-<targetFieldLength>0</targetFieldLength>
-<removeSelectedFields>N</removeSelectedFields>
-    </ConcatFields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1340</xloc>
-      <yloc>1070</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>FR 11</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-<send_true_to/>
-<send_false_to/>
-    <compare>
-<condition>
- <negated>N</negated>
- <leftvalue>MONTO</leftvalue>
- <function>IS NOT NULL</function>
- <rightvalue/>
- </condition>
-    </compare>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1410</xloc>
-      <yloc>1070</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>MD 18</name>
+    <name>SV 11</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -15431,7 +15358,7 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <fields>      <field>        <name>Fecha de Pago</name>
+    <fields>      <field>        <name>F_TRANSFERENCIA</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
@@ -15447,55 +15374,65 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>NUM_TRANSACCION</name>
+      </field>      <field>        <name>DIA_SEMANA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KEY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>F_TRANSFERENCIA_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TIPO_MOVIMIENTO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>MONTO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>BANCO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DIA_SEMANA_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KEY_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>COMMENT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>K_VIERNES</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>K_SABADO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NUM_DIA_SEMANA_1</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
-      <meta>        <name>Fecha de Pago</name>
-        <rename>F_TRANSFERENCIA</rename>
-        <type>Date</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask>yyyy&#x2f;MM&#x2f;dd</conversion_mask>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>    </fields>     <cluster_schema/>
+    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1780</xloc>
-      <yloc>1070</yloc>
+      <xloc>2650</xloc>
+      <yloc>2030</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>BR_TRANSF</name>
-    <type>Dummy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>6660</xloc>
-      <yloc>890</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>SV 10</name>
+    <name>SV 12</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -15505,7 +15442,7 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <fields>      <field>        <name>FECHA TRANSACCION</name>
+    <fields>      <field>        <name>F_TRANSFERENCIA</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
@@ -15513,44 +15450,73 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>VALOR</name>
-        <rename>MONTO</rename>
+      </field>      <field>        <name>MONTO</name>
+        <rename/>
         <length>-2</length>
         <precision>-2</precision>
       </field>      <field>        <name>BANCO</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>NUMERO REFERENCIA</name>
-        <rename>NUM_TRANSACCION</rename>
+      </field>      <field>        <name>DIA_SEMANA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KEY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>F_TRANSFERENCIA_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TIPO_MOVIMIENTO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>MONTO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>BANCO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DIA_SEMANA_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KEY_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>COMMENT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>K_VIERNES</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>K_SABADO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NUM_DIA_SEMANA_1</name>
+        <rename/>
         <length>-2</length>
         <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
-      <meta>        <name>FECHA TRANSACCION</name>
-        <rename>F_TRANSFERENCIA</rename>
-        <type>Date</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask>yyyyMMdd</conversion_mask>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>    </fields>     <cluster_schema/>
+    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1230</xloc>
-      <yloc>840</yloc>
+      <xloc>3940</xloc>
+      <yloc>1990</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
 
   <step>
-    <name>MD 3 2</name>
+    <name>SV 13</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -15560,26 +15526,185 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <fields>        <select_unspecified>N</select_unspecified>
-      <meta>        <name>F_TRANSFERENCIA</name>
-        <rename>F_TRANSFERENCIA</rename>
-        <type>Date</type>
+    <fields>      <field>        <name>F_TRANSFERENCIA</name>
+        <rename/>
         <length>-2</length>
         <precision>-2</precision>
-        <conversion_mask>yyyy&#x2f;MM&#x2f;dd</conversion_mask>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>    </fields>     <cluster_schema/>
+      </field>      <field>        <name>TIPO_MOVIMIENTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>MONTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>BANCO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DIA_SEMANA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KEY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>F_TRANSFERENCIA_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>TIPO_MOVIMIENTO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>MONTO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>BANCO_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DIA_SEMANA_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KEY_1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>COMMENT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1350</xloc>
-      <yloc>840</yloc>
+      <xloc>4740</xloc>
+      <yloc>2360</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>BV 10</name>
+    <type>StreamLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <from>MENSUAL 4</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>BANCO</name>
+        <field>BANCO</field>
+      </key>
+      <key>
+        <name>BANCO_1</name>
+        <field>BANCO_1</field>
+      </key>
+      <value>
+        <name>MONTO</name>
+        <rename>MONTO_MENSUAL</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+      <value>
+        <name>MONTO_1</name>
+        <rename>MONTO_MENSUAL_1</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+      <value>
+        <name>CUADRE</name>
+        <rename>CUADRE</rename>
+        <default/>
+        <type>String</type>
+      </value>
+      <value>
+        <name>PERIODO</name>
+        <rename>PERIODO</rename>
+        <default/>
+        <type>String</type>
+      </value>
+      <value>
+        <name>DIF_MENSUAL</name>
+        <rename>DIF_MENSUAL</rename>
+        <default/>
+        <type>Number</type>
+      </value>
+      <value>
+        <name>KEY</name>
+        <rename>KEY</rename>
+        <default/>
+        <type>String</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>6310</xloc>
+      <yloc>2010</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>DP</name>
+    <type>UniqueRowsByHashSet</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <store_values>N</store_values>
+      <reject_duplicate_row>N</reject_duplicate_row>
+      <error_description/>
+    <fields>      <field>        <name>BANCO_1</name>
+        </field>      </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>6290</xloc>
+      <yloc>2260</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to/>
+<send_false_to/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue/>
+ <function>&#x3d;</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>6580</xloc>
+      <yloc>1540</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
