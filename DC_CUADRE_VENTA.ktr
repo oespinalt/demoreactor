@@ -1783,7 +1783,6 @@
   <hop> <from>MD 7</from><to>FR 20</to><enabled>Y</enabled> </hop>
   <hop> <from>ORDER</from><to>MD 7</to><enabled>Y</enabled> </hop>
   <hop> <from>H3</from><to>SL 23</to><enabled>Y</enabled> </hop>
-  <hop> <from>SL 23</from><to>REPORTE_CUADRE_DE_CAJA_H3</to><enabled>Y</enabled> </hop>
   <hop> <from>ADMIN_TRANSF</from><to>BV 2</to><enabled>Y</enabled> </hop>
   <hop> <from>TODOS_BANCOS 3</from><to>BV 2</to><enabled>Y</enabled> </hop>
   <hop> <from>CORRECTO 2</from><to>RESULTADO_FINAL 3 2</to><enabled>Y</enabled> </hop>
@@ -1797,9 +1796,9 @@
   <hop> <from>P 15</from><to>SL 27</to><enabled>Y</enabled> </hop>
   <hop> <from>SL 24</from><to>p_full</to><enabled>Y</enabled> </hop>
   <hop> <from>SL 27</from><to>rs 3</to><enabled>Y</enabled> </hop>
-  <hop> <from>BV 2</from><to>FR 29</to><enabled>Y</enabled> </hop>
-  <hop> <from>FR 29</from><to>CORRECTO 2</to><enabled>Y</enabled> </hop>
-  <hop> <from>FR 29</from><to>P 17</to><enabled>Y</enabled> </hop>
+  <hop> <from>BV 2</from><to>FR 29</to><enabled>N</enabled> </hop>
+  <hop> <from>FR 29</from><to>CORRECTO 2</to><enabled>N</enabled> </hop>
+  <hop> <from>FR 29</from><to>P 17</to><enabled>N</enabled> </hop>
   <hop> <from>NUM 2</from><to>LEFT 2</to><enabled>Y</enabled> </hop>
   <hop> <from>P_UNION_ALL</from><to>NUM 2</to><enabled>Y</enabled> </hop>
   <hop> <from>LEFT 2</from><to>SO 2</to><enabled>Y</enabled> </hop>
@@ -1855,6 +1854,11 @@
   <hop> <from>Switch &#x2f; Case</from><to>BR_TRANSF</to><enabled>Y</enabled> </hop>
   <hop> <from>BR_TRANSF</from><to>TRANSFERENCIA 4</to><enabled>Y</enabled> </hop>
   <hop> <from>TRANSFERENCIA 4</from><to>POPULAR 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>ADMIN 5</from><to>Filter rows 2</to><enabled>N</enabled> </hop>
+  <hop> <from>BV 2</from><to>CORRECTO 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>SL 23</from><to>REPORTE_CUADRE_DE_CAJA_H3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Switch &#x2f; Case</from><to>SANTA_CRUZ 7</to><enabled>Y</enabled> </hop>
+  <hop> <from>SANTA_CRUZ 7</from><to>POPULAR 2</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>1F 4</name>
@@ -1915,25 +1919,6 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>4860</xloc>
       <yloc>3110</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>BAN_RESERVAS 3</name>
-    <type>Dummy</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>5770</xloc>
-      <yloc>1140</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -2010,7 +1995,7 @@
     <name>ADMIN 5</name>
     <type>ExcelInput</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
          <partitioning>
@@ -2045,7 +2030,7 @@
         <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2057,7 +2042,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2069,7 +2054,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2081,7 +2066,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2093,7 +2078,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2105,7 +2090,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2117,7 +2102,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2129,7 +2114,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2141,7 +2126,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2153,7 +2138,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2161,11 +2146,23 @@
         <group/>
       </field>
       <field>
-        <name>Reserva</name>
+        <name>Reserva&#x2f;Marca</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>Duraci&#xf3;n &#x28;Minutos&#x29;</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2174,10 +2171,10 @@
       </field>
       <field>
         <name>Cantidad</name>
-        <type>String</type>
+        <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2186,10 +2183,10 @@
       </field>
       <field>
         <name>Precio de Lista</name>
-        <type>String</type>
+        <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2201,7 +2198,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2210,10 +2207,10 @@
       </field>
       <field>
         <name>Precio</name>
-        <type>String</type>
+        <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2222,10 +2219,10 @@
       </field>
       <field>
         <name>Total</name>
-        <type>String</type>
+        <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2237,7 +2234,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2249,7 +2246,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2261,7 +2258,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2273,7 +2270,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2285,7 +2282,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2297,7 +2294,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2309,7 +2306,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2321,7 +2318,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2330,10 +2327,10 @@
       </field>
       <field>
         <name>Transferencia Bancaria</name>
-        <type>String</type>
+        <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2341,35 +2338,11 @@
         <group/>
       </field>
       <field>
-        <name>Transferencia Bancaria </name>
+        <name>Transferencia  &#x28;Desactivado&#x29;</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>Tarjeta </name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>Stripe &#x28;Desactivado&#x29;</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2381,7 +2354,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2393,7 +2366,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2405,7 +2378,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2417,7 +2390,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2429,7 +2402,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2441,7 +2414,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2453,7 +2426,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2465,7 +2438,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2477,7 +2450,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2485,35 +2458,11 @@
         <group/>
       </field>
       <field>
-        <name>&#x23; Transferencia Bancaria </name>
+        <name>&#x23; Transferencia  &#x28;Desactivado&#x29;</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>&#x23; Tarjeta </name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>&#x23; Stripe &#x28;Desactivado&#x29;</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2525,7 +2474,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2537,7 +2486,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2549,7 +2498,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2561,7 +2510,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2573,7 +2522,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2585,7 +2534,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2594,10 +2543,10 @@
       </field>
       <field>
         <name>Monto a pagar</name>
-        <type>String</type>
+        <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2606,10 +2555,10 @@
       </field>
       <field>
         <name>Monto pagado</name>
-        <type>String</type>
+        <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2618,10 +2567,10 @@
       </field>
       <field>
         <name>Vuelto</name>
-        <type>String</type>
+        <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -2633,7 +2582,7 @@
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
-        <trim_type>both</trim_type>
+        <trim_type>none</trim_type>
         <repeat>N</repeat>
         <format/>
         <currency/>
@@ -3456,6 +3405,25 @@
     </step>
 
   <step>
+    <name>BAN_RESERVAS 3</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>5770</xloc>
+      <yloc>1140</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>BAN_RESERVAS 4</name>
     <type>SortRows</type>
     <description/>
@@ -4079,6 +4047,87 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>1240</xloc>
       <yloc>680</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>C 2</name>
+    <type>ConcatFields</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name/>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>Concepto</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>MEDIO_DE_PAGO</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>both</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <ConcatFields>
+<targetFieldName>TIPO_MOVIMIENTO</targetFieldName>
+<targetFieldLength>0</targetFieldLength>
+<removeSelectedFields>N</removeSelectedFields>
+    </ConcatFields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1480</xloc>
+      <yloc>450</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -4883,6 +4932,35 @@
     </step>
 
   <step>
+    <name>EFECTIVO 2</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to/>
+<send_false_to/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>TIPO_MOVIMIENTO</leftvalue>
+ <function>CONTAINS</function>
+ <rightvalue/>
+ <value><name>constant</name><type>String</type><text>Efectivo</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>5770</xloc>
+      <yloc>1250</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>EFECTIVO 3</name>
     <type>FilterRows</type>
     <description/>
@@ -4907,6 +4985,40 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>5920</xloc>
       <yloc>1070</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Efectivo</name>
+    <type>IfNull</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <replaceAllByValue/>
+      <replaceAllMask/>
+      <selectFields>Y</selectFields>
+      <selectValuesType>N</selectValuesType>
+      <setEmptyStringAll>N</setEmptyStringAll>
+    <valuetypes>
+      </valuetypes>
+    <fields>
+      <field>
+        <name>MEDIO_DE_PAGO</name>
+        <value>Efectivo</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+        </field>
+      </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1320</xloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -5335,7 +5447,7 @@
     </compare>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>6320</xloc>
+      <xloc>6240</xloc>
       <yloc>1550</yloc>
       <draw>Y</draw>
       </GUI>
@@ -5552,6 +5664,35 @@
     </step>
 
   <step>
+    <name>FR 9</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Efectivo</send_true_to>
+<send_false_to>TRANSFERENCIA 2</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>Concepto</leftvalue>
+ <function>CONTAINS</function>
+ <rightvalue/>
+ <value><name>constant</name><type>String</type><text>DEPOSITO</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1230</xloc>
+      <yloc>450</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
     <name>Filter rows</name>
     <type>FilterRows</type>
     <description/>
@@ -5576,6 +5717,35 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>6580</xloc>
       <yloc>1540</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 2</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to/>
+<send_false_to/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>Efectivo</leftvalue>
+ <function>IS NOT NULL</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>850</xloc>
+      <yloc>850</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -5651,6 +5821,39 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>2330</xloc>
       <yloc>360</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>K</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>NOMBRE_NEGOCIO</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>DEPICENTER</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>4060</xloc>
+      <yloc>3900</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -8268,7 +8471,7 @@
            </partitioning>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>6430</xloc>
+      <xloc>6390</xloc>
       <yloc>1550</yloc>
       <draw>Y</draw>
       </GUI>
@@ -8505,46 +8708,6 @@
     </step>
 
   <step>
-    <name>TODOS_BANCOS 3</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
-      <prefix>out</prefix>
-      <sort_size>1000000</sort_size>
-      <free_memory/>
-      <compress>N</compress>
-      <compress_variable/>
-      <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>MONTO</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>NUM_TRANSACCION_2</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>6480</xloc>
-      <yloc>1350</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
     <name>P_UNION</name>
     <type>Dummy</type>
     <description/>
@@ -8578,6 +8741,25 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>4280</xloc>
       <yloc>1610</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>P_UNION 3</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1400</xloc>
+      <yloc>450</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -8856,7 +9038,7 @@
     <template>
       <enabled>N</enabled>
       <append>N</append>
-      <filename>template.xls</filename>
+      <filename>C&#x3a;&#x5c;analisis&#x5c;template.xls</filename>
     </template>
     <fields>
       <field>
@@ -9134,7 +9316,7 @@
     <optimizationLevel>9</optimizationLevel>
     <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
         <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2f;Script here&#xa;&#xa;if&#x28; BANCO.getString&#x28;&#x29;&#x3d;&#x3d;  null&#x29;&#xa;&#x7b;&#xa;	&#x2f;&#x2f;COMMENT.setValue&#x28;&#x22;Este valor de POPULAR, no se encuentra del lado de ADMINISTRACION&#x22;&#x29;&#x3b;&#xd;&#xa;	COMMENT.setValue&#x28;&#x22;Este valor de &#x22;&#x2b;BANCO_1.getString&#x28;&#x29;&#x2b;&#x22;, no se encuentra del lado de ADMINISTRACION&#x22;&#x29;&#x3b;&#xa;	BANCO.setValue&#x28;&#x22;ADMINISTRACION&#x22;&#x29;&#x3b;&#xa;&#x7d;&#xa;if&#x28;BANCO_1.getString&#x28;&#x29; &#x3d;&#x3d;  null&#x29;&#xa;&#x7b;&#xa;	COMMENT.setValue&#x28;&#x22;Este valor de ADMINISTRACION, no se encuentra del lado de POPULAR&#x22;&#x29;&#x3b;&#xa;	BANCO_1.setValue&#x28;&#x22;POPULAR&#x22;&#x29;&#x3b;&#xa;&#x7d;</jsScript_script>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xa;&#xa;if&#x28; BANCO.getString&#x28;&#x29;&#x3d;&#x3d;  null&#x29;&#xa;&#x7b;&#xa;	&#x2f;&#x2f;COMMENT.setValue&#x28;&#x22;Este valor de POPULAR, no se encuentra del lado de ADMINISTRACION&#x22;&#x29;&#x3b;&#xd;&#xa;	COMMENT.setValue&#x28;&#x22;Este valor de &#x22;&#x2b;BANCO_1.getString&#x28;&#x29;&#x2b;&#x22;, no se encuentra del lado de ADMINISTRACION&#x22;&#x29;&#x3b;&#xa;	BANCO.setValue&#x28;&#x22;ADMINISTRACION&#x22;&#x29;&#x3b;&#xa;&#x7d;&#xa;if&#x28;BANCO_1.getString&#x28;&#x29; &#x3d;&#x3d;  null&#x29;&#xa;&#x7b;&#xa;	COMMENT.setValue&#x28;&#x22;Este valor de ADMINISTRACION, no se encuentra del lado de BANCOS&#x22;&#x29;&#x3b;&#xa;	BANCO_1.setValue&#x28;&#x22;BANCOS&#x22;&#x29;&#x3b;&#xa;&#x7d;</jsScript_script>
       </jsScript>    </jsScripts>    <fields>    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>6310</xloc>
@@ -10353,7 +10535,7 @@
       </field>        <select_unspecified>N</select_unspecified>
     </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>4420</xloc>
+      <xloc>4370</xloc>
       <yloc>4350</yloc>
       <draw>Y</draw>
       </GUI>
@@ -11363,11 +11545,11 @@
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>Transferencia Bancaria </name>
+      </field>      <field>        <name>Transferencia Bancaria</name>
         <rename>TRANSFERENCIA_BANCARIA_2</rename>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>&#x23; Transferencia Bancaria </name>
+      </field>      <field>        <name>&#x23; Transferencia Bancaria</name>
         <rename>NUM_TRANSACCION</rename>
         <length>-2</length>
         <precision>-2</precision>
@@ -11429,10 +11611,52 @@
 <target_step>POPULAR 2</target_step>
 </case><case><value>BAN_RESERVAS</value>
 <target_step>BR_TRANSF</target_step>
+</case><case><value>SANTA_CRUZ</value>
+<target_step>SANTA_CRUZ 7</target_step>
 </case></cases>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>2430</xloc>
       <yloc>470</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>TODOS_BANCOS 3</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>MONTO</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>NUM_TRANSACCION_2</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>6480</xloc>
+      <yloc>1350</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -11452,6 +11676,69 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>6230</xloc>
       <yloc>1070</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>TRANSFERENCIA 2</name>
+    <type>IfNull</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <replaceAllByValue/>
+      <replaceAllMask/>
+      <selectFields>Y</selectFields>
+      <selectValuesType>N</selectValuesType>
+      <setEmptyStringAll>N</setEmptyStringAll>
+    <valuetypes>
+      </valuetypes>
+    <fields>
+      <field>
+        <name>MEDIO_DE_PAGO</name>
+        <value>Transferencia</value>
+        <mask/>
+        <set_empty_string>N</set_empty_string>
+        </field>
+      </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1320</xloc>
+      <yloc>500</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>TRANSFERENCIA 4</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to/>
+<send_false_to/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>TIPO_MOVIMIENTO</leftvalue>
+ <function>CONTAINS</function>
+ <rightvalue/>
+ <value><name>constant</name><type>String</type><text>Transferencia</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>6560</xloc>
+      <yloc>930</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -12908,137 +13195,7 @@
     </step>
 
   <step>
-    <name>K</name>
-    <type>Constant</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <fields>
-      <field>
-        <name>NOMBRE_NEGOCIO</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif>DEPICENTER</nullif>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-      </field>
-    </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>4060</xloc>
-      <yloc>3900</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>FR 9</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-<send_true_to>Efectivo</send_true_to>
-<send_false_to>TRANSFERENCIA 2</send_false_to>
-    <compare>
-<condition>
- <negated>N</negated>
- <leftvalue>Concepto</leftvalue>
- <function>CONTAINS</function>
- <rightvalue/>
- <value><name>constant</name><type>String</type><text>DEPOSITO</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
-    </compare>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1230</xloc>
-      <yloc>450</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Efectivo</name>
-    <type>IfNull</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <replaceAllByValue/>
-      <replaceAllMask/>
-      <selectFields>Y</selectFields>
-      <selectValuesType>N</selectValuesType>
-      <setEmptyStringAll>N</setEmptyStringAll>
-    <valuetypes>
-      </valuetypes>
-    <fields>
-      <field>
-        <name>MEDIO_DE_PAGO</name>
-        <value>Efectivo</value>
-        <mask/>
-        <set_empty_string>N</set_empty_string>
-        </field>
-      </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1320</xloc>
-      <yloc>400</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>TRANSFERENCIA 2</name>
-    <type>IfNull</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-      <replaceAllByValue/>
-      <replaceAllMask/>
-      <selectFields>Y</selectFields>
-      <selectValuesType>N</selectValuesType>
-      <setEmptyStringAll>N</setEmptyStringAll>
-    <valuetypes>
-      </valuetypes>
-    <fields>
-      <field>
-        <name>MEDIO_DE_PAGO</name>
-        <value>Transferencia</value>
-        <mask/>
-        <set_empty_string>N</set_empty_string>
-        </field>
-      </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1320</xloc>
-      <yloc>500</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>P_UNION 3</name>
+    <name>SANTA_CRUZ 7</name>
     <type>Dummy</type>
     <description/>
     <distribute>Y</distribute>
@@ -13050,147 +13207,8 @@
            </partitioning>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1400</xloc>
-      <yloc>450</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>C 2</name>
-    <type>ConcatFields</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <separator>&#x3b;</separator>
-    <enclosure>&#x22;</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>N</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding/>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name/>
-      <is_command>N</is_command>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
-      <extention>txt</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery>0</splitevery>
-    </file>
-    <fields>
-      <field>
-        <name>Concepto</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>MEDIO_DE_PAGO</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>both</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-    </fields>
-    <ConcatFields>
-<targetFieldName>TIPO_MOVIMIENTO</targetFieldName>
-<targetFieldLength>0</targetFieldLength>
-<removeSelectedFields>N</removeSelectedFields>
-    </ConcatFields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>1480</xloc>
-      <yloc>450</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>EFECTIVO 2</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-<send_true_to/>
-<send_false_to/>
-    <compare>
-<condition>
- <negated>N</negated>
- <leftvalue>TIPO_MOVIMIENTO</leftvalue>
- <function>CONTAINS</function>
- <rightvalue/>
- <value><name>constant</name><type>String</type><text>Efectivo</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
-    </compare>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>5770</xloc>
-      <yloc>1250</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>TRANSFERENCIA 4</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-<send_true_to/>
-<send_false_to/>
-    <compare>
-<condition>
- <negated>N</negated>
- <leftvalue>TIPO_MOVIMIENTO</leftvalue>
- <function>CONTAINS</function>
- <rightvalue/>
- <value><name>constant</name><type>String</type><text>Transferencia</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
-    </compare>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>6560</xloc>
-      <yloc>930</yloc>
+      <xloc>6480</xloc>
+      <yloc>760</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
